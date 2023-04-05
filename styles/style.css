@@ -1,0 +1,44 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 100px repeat(4, 1fr);
+    grid-template-rows: 250px 150px 200px;
+    gap: 15px;
+    padding: 15px;
+    height: 100vh;
+    width: 100%;
+}
+
+.box {
+    border-radius: 8px;
+    background: linear-gradient(160deg,
+            rgba(0, 148, 233, 0.762) 0%,
+            rgba(128, 208, 199, 0.1) 100%);
+    font-size: x-large;
+    padding: 20px;
+}
+
+.sidbar {
+    grid-row: 1/-1;
+}
+
+.header {
+    grid-column: 2/-1;
+}
+
+.chart-one {
+    grid-column: 2/4;
+}
+
+.chart-two {
+    grid-column: 4/-1;
+}
+
+.overview {
+    grid-column: 2/5;
+}
